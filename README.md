@@ -2,10 +2,10 @@
 a simple piece of ui, feel free to use it.
 
 The current exports available are:
--- Show the text UI
 - `exports.text_ui:showTextUI("Enter Clothing Store", "Press E", "E")`
--- Hide the text UI
+-- Show the text UI
 - `exports.text_ui:hideTextUI()`
+-- Hide the text UI
 
 Installation
 
