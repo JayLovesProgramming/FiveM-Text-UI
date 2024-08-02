@@ -1,6 +1,12 @@
-#Text UI I made in React
+# Text UI 
+a simple piece of ui, feel free to use it.
 
-A simple and clean text UI component for your server, made using React. Feel free to use and modify it as needed.
+The current exports available are:
+-- Show the text UI
+- `exports.text_ui:showTextUI("Enter Clothing Store", "Press E", "E")`
+-- Hide the text UI
+- `exports.text_ui:hideTextUI()`
+
 Installation
 
     Clone or download the repository.
@@ -9,12 +15,5 @@ Installation
 
 You only need the folder named "text_ui" if you don't want to edit this resource. Just drag and drop.
 
-exports 
-
--- Show the text UI
-exports.text_ui:showTextUI("Enter Clothing Store", "Press E", "E")
-
--- Hide the text UI
-exports.text_ui:hideTextUI()
 
 ![image](https://github.com/user-attachments/assets/a603fcd6-aa67-4c99-a525-fdfa1bff9a0d)
