@@ -1,4 +1,4 @@
-Text UI I made in React
+#Text UI I made in React
 
 A simple and clean text UI component for your server, made using React. Feel free to use and modify it as needed.
 Installation
