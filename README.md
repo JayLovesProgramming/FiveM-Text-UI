@@ -1,5 +1,5 @@
 # Text UI 
-a simple piece of ui, feel free to use it
+A simple piece of ui, feel free to use it
 
 The current exports available are:
 - `exports.text_ui:showTextUI("Enter Organ Heist", "Press E", "E")`
