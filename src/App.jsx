@@ -2,10 +2,10 @@ import './App.css'
 import { useState, useEffect } from 'react'
 
 function App() {
-  const [titleText, settitleText] = useState('Open Garage')
+  const [titleText, setTitleText] = useState('Open Garage')
   const [pressText, setPressText] = useState('Press E')
   const [keyText, setKeyText] = useState('E')
-  const [isVisible, setIsVisible] = useState(false) // New state variable for visibility
+  const [isVisible, setIsVisible] = useState(false) // Initial state for visibility
 
   useEffect(() => {
     const handleMessage = (event) => {
@@ -16,7 +16,7 @@ function App() {
       if (event.data.type === 'showTextUI') {
         setIsVisible(true) // Show the UI
         if (event.data.titleText) {
-          settitleText(event.data.titleText)
+          setTitleText(event.data.titleText)
         }
         if (event.data.pressText) {
           setPressText(event.data.pressText)
@@ -34,22 +34,16 @@ function App() {
     }
   }, [])
 
-  if (!isVisible) {
-    return null // Render nothing if not visible
-  }
-
   return (
-    <>
-      <div className='text_ui_container'>
-        <div className='text_ui_box'>
-          <div className='text_ui'>
-            <h1>{keyText}</h1>
-          </div>
-          <h1 className='text_ui_text'>{titleText}</h1>
-          <h3 className='text_ui_description'>{pressText}</h3>
+    <div className={`text_ui_container ${isVisible ? 'visible' : 'hidden'}`}>
+      <div className='text_ui_box'>
+        <div className='text_ui'>
+          <h1>{keyText}</h1>
         </div>
+        <h1 className='text_ui_text'>{titleText}</h1>
+        <h3 className='text_ui_description'>{pressText}</h3>
       </div>
-    </>
+    </div>
   )
 }
 
