@@ -15,5 +15,8 @@ Installation
 
 You only need the folder named "text_ui" if you don't want to edit this resource. Just drag and drop
 
+Want to build the UI and edit something to make it your own? 
+
+- Use `pnpm run dev`
 
 ![image](https://github.com/user-attachments/assets/a603fcd6-aa67-4c99-a525-fdfa1bff9a0d)
